@@ -1,39 +1,38 @@
-from config import SCREEN_WIDTH, SCREEN_HEIGHT, FONT_FAMILY
 import equation1
 import equation2
 import equation3
-import tkinter
+import time
+import os
 
-WIDTH_BUTTONS = SCREEN_WIDTH // 33
-PADY_BUTTONS = SCREEN_HEIGHT // 65
+def main():
 
-def new_equation1():
-    window.destroy()
-    equation1.main()
-def new_equation2():
-    window.destroy()
-    equation2.main()
+    os.system("cls")
+    time.sleep(0.3)
 
-def new_equation3():
-    window.destroy()
-    equation3.main()
+    print("Bienvenue dans le solveur d'équations\n")
+    print("(1) ax + b = 0")
+    print("(2) ax² + bx + c = 0")
+    print("(3) ax + b = cx + d")
 
-window = tkinter.Tk()
-window.title("Solver Master - Menu")
-window.geometry(f"{SCREEN_WIDTH}x{SCREEN_HEIGHT}")
-window.resizable(width = False, height = False)
+    equation = input("\nQuel type d'équation vous voulez résoudre parmi les propositions ci-dessus : ")
+    while(equation != '1' and equation != '2' and equation != '3'):
 
-lab_title = tkinter.Label(window, text="Quel type d'équation vous-voulez résoudre ?", font=(FONT_FAMILY, 17))
-lab_title.pack(pady=(SCREEN_HEIGHT/9, SCREEN_HEIGHT/13))
+        print("\nERREUR : saisie invalide\n")
+        time.sleep(1)
 
-equations_frame = tkinter.Frame(window)
-equations_frame.pack()
+        print("(1) ax + b = 0")
+        print("(2) ax² + bx + c = 0")
+        print("(3) ax + b = cx + d")
 
-eq1 = tkinter.Button(equations_frame, text="ax + b = 0", font=(FONT_FAMILY, 14), fg="black", width=WIDTH_BUTTONS, command=new_equation1)
-eq1.pack(pady=PADY_BUTTONS)
-eq2 = tkinter.Button(equations_frame, text="ax² + bx + c = 0", font=(FONT_FAMILY, 15), width=WIDTH_BUTTONS, command=new_equation2)
-eq2.pack(pady=PADY_BUTTONS)
-eq3 = tkinter.Button(equations_frame, text="ax + b = cx + d", font=(FONT_FAMILY, 15), width=WIDTH_BUTTONS, command=new_equation3)
-eq3.pack(pady=PADY_BUTTONS)
+        equation = input("\nVeuillez choisir l'une des propositions ci-dessus : ")
 
-window.mainloop()
+    os.system("cls")
+
+    if(equation == '1'):
+        equation1.main()
+    elif(equation == '2'):
+        equation2.main()
+    elif(equation == '3'):
+        equation3.main()
+
+main()

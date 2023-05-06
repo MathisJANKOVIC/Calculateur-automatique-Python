@@ -1,3 +1,5 @@
+PRINTING_TIME = 0.2
+
 def is_decimal(value):
     if(value.replace(".","").replace("-","").isdecimal()):
         return True
