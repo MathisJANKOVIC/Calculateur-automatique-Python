@@ -5,7 +5,6 @@ import time
 import os
 
 def main():
-
     os.system("cls")
     time.sleep(0.3)
 
@@ -25,8 +24,6 @@ def main():
         print("(3) ax + b = cx + d")
 
         equation = input("\nVeuillez choisir l'une des propositions ci-dessus : ")
-
-    os.system("cls")
 
     if(equation == '1'):
         equation1.main()
