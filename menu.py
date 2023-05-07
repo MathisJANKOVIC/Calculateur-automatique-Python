@@ -40,4 +40,5 @@ def main():
     elif(equation == '3'):
         equation3.main()
 
-main()
+if(__name__ == "__main__"):
+    main()

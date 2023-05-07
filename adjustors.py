@@ -1,11 +1,3 @@
-PRINTING_TIME = 0.25
-
-def is_decimal(value):
-    if(value.replace(".","").replace("-","").isdecimal()):
-        return True
-    else:
-        return False
-
 def adjust_type(value):
     if("." in value):
         return float(value)

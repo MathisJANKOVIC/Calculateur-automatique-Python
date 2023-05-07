@@ -1,27 +1,14 @@
-from utility import *
+from adjustors import *
+from utils import *
 from math import sqrt
 import time
 
 def main():
     print("Résolvons l'équation du type ax² + bx + c = 0 (a != 0) \n")
 
-    a = input("a = ")
-    while(not is_decimal(a)  or a == "0"):
-        if(not is_decimal(a)):
-            print("\nERREUR : la saisie doit être un nombre en écriture décimale \nVeuillez réessayer : \n")
-        else:
-            print("\nERREUR : a ne peut être null \nVeuillez réessayer : \n")
-        a = input("a = ")
-
-    b = input("b = ")
-    while(not is_decimal(b)):
-        print("\nERREUR : la saisie doit être un nombre en écriture décimale \nVeuillez réessayer : \n")
-        b = input("b = ")
-
-    c = input("c = ")
-    while(not is_decimal(c)):
-        print("\nERREUR : la saisie doit être un nombre en écriture décimale \nVeuillez réessayer : \n")
-        c = input("c = ")
+    a = get_user_value('a', null_ok=False)
+    b = get_user_value('b')
+    c = get_user_value('c')
 
     a = adjust_type(a)
     b = adjust_type(b)
@@ -35,7 +22,7 @@ def main():
         time.sleep(PRINTING_TIME)
         print(f"x² = 0")
         time.sleep(PRINTING_TIME)
-        print(f"x = 0")
+        print(f"x = 0\n")
 
     elif(b != 0 and c == 0):
 
@@ -49,7 +36,7 @@ def main():
         time.sleep(PRINTING_TIME)
         print(f"x = {-b}/{a}")
         time.sleep(PRINTING_TIME)
-        print(f"x = {-b/a}")
+        print(f"x = {-b/a}\n")
 
     elif(b == 0 and c != 0):
 
@@ -65,11 +52,11 @@ def main():
         if (-c/a < 0):
             print("x = Ø")
             time.sleep(PRINTING_TIME)
-            print("\nUn carré étant toujours positif, l'équation n'admet donc aucune solution réelle.")
+            print("\nUn carré étant toujours positif, l'équation n'admet donc aucune solution réelle.\n")
         else:
             print(f"√x² = √({-c/a})")
             time.sleep(PRINTING_TIME)
-            print(f"x = {sqrt(-c/a)}  ou  x = {-sqrt(-c/a)}")
+            print(f"x = {sqrt(-c/a)}  ou  x = {-sqrt(-c/a)}\n")
 
     else:
         print(f"\n{adjust_x(a)}x² {adjust_sign(adjust_x(b))}x {adjust_sign(c)} = 0")
@@ -87,7 +74,7 @@ def main():
         time.sleep(PRINTING_TIME)
 
         if(delta < 0):
-            print("delta < 0 donc l'équation n'admet aucune solution réelle et x = Ø")
+            print("delta < 0 donc l'équation n'admet aucune solution réelle et x = Ø \n")
 
         elif(delta == 0):
 
@@ -99,7 +86,7 @@ def main():
             time.sleep(PRINTING_TIME)
             print(f"x = {-b}/{2*a}")
             time.sleep(PRINTING_TIME)
-            print(f"x = {-b/(2*a)}")
+            print(f"x = {-b/(2*a)}\n")
 
         elif(delta > 0):
 
@@ -126,7 +113,8 @@ def main():
             time.sleep(PRINTING_TIME)
             print(f"x2 = {(-b + sqrt(delta))/(2*a)}\n")
 
-    time.sleep(PRINTING_TIME)
+    input("Pressez 'Entrer' pour continuer... \n")
+    whats_next()
 
 if(__name__ == "__main__"):
     main()
