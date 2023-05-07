@@ -1,9 +1,7 @@
 from utility import *
 import time
-import os
 
 def main():
-    os.system("cls")
     time.sleep(0.3)
     print("Résolvons l'équation du type ax + b = 0 (a != 0)\n")
 

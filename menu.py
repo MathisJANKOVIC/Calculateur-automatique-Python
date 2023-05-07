@@ -1,11 +1,18 @@
 import equation1
 import equation2
 import equation3
+import platform
 import time
 import os
 
+def clear_console():
+    if(platform.system() == "Windows"):
+        os.system("cls")
+    else:
+        os.system("clear")
+
 def main():
-    os.system("cls")
+    clear_console()
     time.sleep(0.3)
 
     print("Bienvenue dans le solveur d'équations\n")
@@ -25,6 +32,7 @@ def main():
 
         equation = input("\nVeuillez choisir l'une des propositions ci-dessus : ")
 
+    clear_console()
     if(equation == '1'):
         equation1.main()
     elif(equation == '2'):
