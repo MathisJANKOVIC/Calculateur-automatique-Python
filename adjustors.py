@@ -1,10 +1,11 @@
-def adjust_type(value):
+def adjust_type(value: str) -> (int | float) :
     if("." in value):
         return float(value)
     else:
         return int(value)
 
-def adjust_sign(coef):
+def adjust_sign(coef: int | float | str ) -> str :
+    """ Adjusts the sign of the coefficient or the single-sign for display in the context of a no first therm in an equation."""
     if(type(coef) == int or type(coef) == float):
         if(coef > 0):
             return (f"+ {coef}")
@@ -18,7 +19,8 @@ def adjust_sign(coef):
         if(coef == "-"):
             return ("- ")
 
-def adjust_x(coef):
+def adjust_x(coef: int) -> (str | int) :
+    """ Adjusts the coefficient for display in the context of an 'x' term in an equation."""
     if(coef == 1):
         return ("")
     elif(coef == -1):

@@ -51,7 +51,7 @@ def main():
         print(f" x² = {-c/a}")
         time.sleep(PRINTING_TIME)
 
-        if (-c/a < 0):
+        if(-c/a < 0):
             print(" x = Ø")
             time.sleep(PRINTING_TIME)
             print("\n Un carré étant toujours positif, l'équation n'admet donc aucune solution réelle.\n")
