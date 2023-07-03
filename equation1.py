@@ -1,11 +1,12 @@
-from utils import PRINTING_TIME, clear_console, get_user_value
+from utils import PRINTING_TIMELAPS, CONTINUE_MESSAGE, get_user_value
 from adjustors import adjust_sign, adjust_type, adjust_x
-import end_process as ed
+import main
 import time
+import os
 
-def main():
-    clear_console()
-    print(" Résolvons l'équation du type ax + b = 0 (a != 0)\n")
+def run():
+    os.system("cls" if(os.name == "nt") else "clear")
+    print("\n Résolvons l'équation du type ax + b = 0 (a != 0)\n")
 
     a = get_user_value('a', null_ok=False)
     b = get_user_value('b')
@@ -14,14 +15,15 @@ def main():
     b = adjust_type(b)
 
     print(f"\n {adjust_x(a)}x {adjust_sign(b)} = 0")
-    time.sleep(PRINTING_TIME)
+    time.sleep(PRINTING_TIMELAPS)
     print(f" {adjust_x(a)}x = {-b}")
-    time.sleep(PRINTING_TIME)
+    time.sleep(PRINTING_TIMELAPS)
     print(f" x = {-b}/{a}")
-    time.sleep(PRINTING_TIME)
+    time.sleep(PRINTING_TIMELAPS)
     print(f" x = {-b/a}\n")
 
-    ed.end_process(page = "equation1")
+    input(CONTINUE_MESSAGE + "\n ")
+    main.main()
 
 if(__name__ == "__main__"):
-    main()
+    main.main()
