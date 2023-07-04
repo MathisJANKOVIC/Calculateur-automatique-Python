@@ -8,9 +8,11 @@ Equation Solver is a Python algorithm that has the ability to solve equations by
 
 ## Requirements
 - Git (optionnal)
-- Python
+- Python (optionnal on Windows)
 
 ## Configuration
+If you are on Windows you can simply run `equation_solver.exe` otherwise follow those instructions :
+
     1. Download and extract the zip or clone the project
     2. Navigate into a terminal to the project folder
     3. Run the command `python menu.py` (requires python path in environement variables)
