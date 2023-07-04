@@ -21,7 +21,7 @@ def get_user_value(label: str, null_ok = True) -> str :
     if(null_ok):
         while(not is_decimal(value)):
             print("\n ERREUR : la saisie doit être un nombre en écriture décimale \n Veuillez réessayer : \n")
-            value = input(f"{label} = ")
+            value = input(f" {label} = ")
     else:
         while(not is_decimal(value) or value == '0'):
             if(not is_decimal(value)):
