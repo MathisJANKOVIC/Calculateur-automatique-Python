@@ -70,8 +70,3 @@ def console_menu(title: str, options: tuple | list, cursor_color: str) -> str :
     os.system("cls" if os.name == "nt" else "clear")
 
     return options[cursor_height - VERTICAL_SPACING]
-
-if(__name__ == "__main__"):
-    OPTIONS = ["Option 1", "Option 2", "Option 3", "Quit"]
-    choice = console_menu("Amazing Console Menu", OPTIONS, "blue")
-    print(choice)
