@@ -11,7 +11,7 @@ Equation Solver is a Python algorithm that has the ability to solve equations by
 - Python (optionnal on Windows)
 
 ## Configuration
-If you are on Windows you can simply run `equation_solver.exe` otherwise follow those instructions :
+If you are on Windows you can simply run `Equation Solver.exe` otherwise follow those instructions :
 
 - Download and extract the zip or clone the project
 - Navigate into a terminal to the project folder
