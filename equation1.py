@@ -5,7 +5,7 @@ import time
 import os
 
 def run():
-    os.system("cls" if(os.name == "nt") else "clear")
+    os.system("cls")
     print("\n Résolvons l'équation du type ax + b = 0 (a != 0)\n")
 
     a = get_user_value('a', null_ok=False)
@@ -22,7 +22,7 @@ def run():
     time.sleep(PRINTING_TIMELAPS)
     print(f" x = {-b/a}\n")
 
-    input(CONTINUE_MESSAGE + "\n ")
+    input(CONTINUE_MESSAGE + " ")
     main.main()
 
 if(__name__ == "__main__"):

@@ -7,8 +7,7 @@ Equation Solver is a Python algorithm that has the ability to solve equations by
     3. ax + b = cx + d
 
 ## Requirements
-- Git (optionnal)
-- Python (optionnal on Windows)
+- Windows
 
 ## Configuration
 If you are on Windows you can simply run `Equation Solver.exe` otherwise follow those instructions :

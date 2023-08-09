@@ -111,7 +111,7 @@ def run():
             time.sleep(PRINTING_TIMELAPS)
             print(f" x2 = {(-b + sqrt(delta))/(2*a)}\n")
 
-    input(CONTINUE_MESSAGE + "\n ")
+    input(CONTINUE_MESSAGE + " ")
     main.main()
 
 if(__name__ == "__main__"):
