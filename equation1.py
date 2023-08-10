@@ -6,7 +6,7 @@ import os
 
 def run():
     os.system("cls")
-    print("\n Résolvons l'équation du type ax + b = 0 (a != 0)\n")
+    print("\n Résolvons l'équation du type ax + b = 0 (a ≠ 0)\n")
 
     a = get_user_value('a', null_ok=False)
     b = get_user_value('b')
