@@ -36,7 +36,7 @@ def get_user_value(label: str, null_ok = True) -> str:
             if(not is_decimal(value)):
                 sys.stdout.write("\n\033[31m La saisie doit être un nombre en écriture décimale \033[0m")
             else:
-                sys.stdout.write(f"\n\033[31m {label} ne peut être nul \033[0m")
+                sys.stdout.write(f"\n\033[31m Le coefficient {label} ne peut être nul \033[0m")
 
             sys.stdout.write("\033[K")
             sys.stdout.write("\033[F" * 2)
