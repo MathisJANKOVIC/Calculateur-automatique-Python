@@ -6,9 +6,10 @@ Equation Solver is a Python algorithm that has the ability to solve equations by
     2. ax² + bx + c = 0
     3. ax + b = cx + d
 
+![equation solving screen](/screen_equation_solving.png)
+
 ## Requirements
-- Git (optionnal)
-- Python 3.10+ (optionnal on Windows)
+- Windows
 
 ## Configuration
 If you are on Windows you can simply run `Equation Solver.exe` otherwise follow those instructions :
