@@ -16,6 +16,6 @@ Equation Solver is a Python program that has the ability to solve equations by d
 ## Installation
 To use the program you can simply download and run `Equation Solver.exe` otherwise if you want to get the project follow those instructions :
 
-1. Clone the project
+1. Download and extract the zip or clone the project
 2. Navigate into a terminal to the project directory
 3. Run the command `python main.py` (requires python path in environement variables)
