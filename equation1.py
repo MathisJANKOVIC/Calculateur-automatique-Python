@@ -1,11 +1,12 @@
 from utils import PRINTING_TIMELAPS, CONTINUE_MESSAGE, get_user_value
 from adjustors import adjust_sign, adjust_type, adjust_x
+
 import main
 import time
 import os
 
 def run():
-    os.system("cls")
+    os.system('cls' if(os.name == 'nt') else 'clear')
     print("\n Résolvons l'équation du type ax + b = 0 (a ≠ 0)\n")
 
     a = get_user_value('a', null_ok=False)

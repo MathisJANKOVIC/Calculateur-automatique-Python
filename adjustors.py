@@ -9,22 +9,22 @@ def adjust_sign(coef) -> str :
     """ Adjusts the sign of the coefficient or the single-sign for display in the context of a no first therm in an equation."""
     if(type(coef) == int or type(coef) == float):
         if(coef > 0):
-            return (f"+ {coef}")
+            return f"+ {coef}"
         if(coef == 0):
-            return ("")
+            return ""
         if(coef < 0):
-            return (f"- {-coef}")
+            return f"- {-coef}"
     else:
         if(coef == ""):
-            return ("+ ")
+            return "+ "
         if(coef == "-"):
-            return ("- ")
+            return "- "
 
 def adjust_x(coef: int):
     """ Adjusts the coefficient for display in the context of an 'x' term in an equation."""
     if(coef == 1):
-        return ("")
+        return ""
     elif(coef == -1):
-        return ("-")
+        return "-"
     else:
-        return (coef)
+        return coef

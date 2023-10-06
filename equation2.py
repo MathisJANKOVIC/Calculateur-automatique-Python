@@ -1,13 +1,14 @@
 from utils import PRINTING_TIMELAPS, CONTINUE_MESSAGE, get_user_value
 from adjustors import adjust_sign, adjust_type, adjust_x
-from math import sqrt
 import main
+
+import math
 import time
 import os
 
 def run():
-    os.system("cls" if(os.name == "nt") else "clear")
-    print("\n Résolvons l'équation du type ax² + bx + c = 0 (a ≠ 0) \n")
+    os.system('cls' if(os.name == 'nt') else 'clear')
+    print("\n Résolvons l'équation du type ax² + bx + c = 0 (a ≠ 0)\n")
 
     a = get_user_value('a', null_ok=False)
     b = get_user_value('b')
@@ -56,7 +57,7 @@ def run():
         else:
             print(f" √x² = √({-c/a})")
             time.sleep(PRINTING_TIMELAPS)
-            print(f" x = {sqrt(-c/a)}  ou  x = {-sqrt(-c/a)}\n")
+            print(f" x = {math.sqrt(-c/a)}  ou  x = {-math.sqrt(-c/a)}\n")
 
     else:
         print(f"\n {adjust_x(a)}x² {adjust_sign(adjust_x(b))}x {adjust_sign(c)} = 0")
@@ -94,22 +95,22 @@ def run():
             time.sleep(PRINTING_TIMELAPS)
             print(f" x₁ = ({-b} - √{dd})/(2*{a})")
             time.sleep(PRINTING_TIMELAPS)
-            print(f" x₁ = ({-b} - {sqrt(dd)})/{2*a}")
+            print(f" x₁ = ({-b} - {math.sqrt(dd)})/{2*a}")
             time.sleep(PRINTING_TIMELAPS)
-            print(f" x₁ = {-b -sqrt(dd)}/{2*a}")
+            print(f" x₁ = {-b -math.sqrt(dd)}/{2*a}")
             time.sleep(PRINTING_TIMELAPS)
-            print(f" x₁ = {(-b -sqrt(dd))/(2*a)}\n")
+            print(f" x₁ = {(-b -math.sqrt(dd))/(2*a)}\n")
 
             time.sleep(PRINTING_TIMELAPS)
             print(" x₂ = (-b + √delta)/(2a)")
             time.sleep(PRINTING_TIMELAPS)
             print(f" x₂ = ({-b} + √{dd})/2*{a}")
             time.sleep(PRINTING_TIMELAPS)
-            print(f" x₂ = ({-b} + {sqrt(dd)})/{2*a}")
+            print(f" x₂ = ({-b} + {math.sqrt(dd)})/{2*a}")
             time.sleep(PRINTING_TIMELAPS)
-            print(f" x₂ = {-b + sqrt(dd)}/{2*a}")
+            print(f" x₂ = {-b + math.sqrt(dd)}/{2*a}")
             time.sleep(PRINTING_TIMELAPS)
-            print(f" x₂ = {(-b + sqrt(dd))/(2*a)}\n")
+            print(f" x₂ = {(-b + math.sqrt(dd))/(2*a)}\n")
 
     input(CONTINUE_MESSAGE + " ")
     main.main()

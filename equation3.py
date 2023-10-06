@@ -1,11 +1,12 @@
 from utils import PRINTING_TIMELAPS, CONTINUE_MESSAGE, get_user_value
 from adjustors import adjust_sign, adjust_type, adjust_x
 import main
+
 import time
 import os
 
 def run():
-    os.system("cls" if(os.name == "nt") else "clear")
+    os.system('cls' if(os.name == 'nt') else 'clear')
     print("\n Résolvons l'équation du type ax + b = cx + d \n")
 
     a = get_user_value("a")
@@ -30,7 +31,7 @@ def run():
     time.sleep(PRINTING_TIMELAPS)
 
     if(a == c):
-        print(" x = Ø car l'equation n'admet aucune solution réelle\n")
+        print(" x = Ø car l'equation n'admet aucune solution réelle \n")
     else:
         print(f" x = {d-b}/{a-c}")
         time.sleep(PRINTING_TIMELAPS)
