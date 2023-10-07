@@ -1,5 +1,5 @@
 from utils import PRINTING_TIMELAPS, CONTINUE_MESSAGE, get_user_value
-from adjustors import adjust_sign, adjust_type, adjust_x
+from adjustors import adjust_sign, adjust_type, adjustx
 import main
 
 import math
@@ -60,7 +60,7 @@ def run():
             print(f" x = {math.sqrt(-c/a)}  ou  x = {-math.sqrt(-c/a)}\n")
 
     else:
-        print(f"\n {adjust_x(a)}x² {adjust_sign(adjust_x(b))}x {adjust_sign(c)} = 0")
+        print(f"\n {adjustx(a)}x² {adjust_sign(adjustx(b))}x {adjust_sign(c)} = 0")
         time.sleep(PRINTING_TIMELAPS)
         print("\n delta = b² - 4ac")
         time.sleep(PRINTING_TIMELAPS)

@@ -20,7 +20,7 @@ def adjust_sign(coef) -> str :
         if(coef == "-"):
             return "- "
 
-def adjust_x(coef: int):
+def adjustx(coef: int):
     """ Adjusts the coefficient for display in the context of an 'x' term in an equation."""
     if(coef == 1):
         return ""

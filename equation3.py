@@ -1,5 +1,5 @@
 from utils import PRINTING_TIMELAPS, CONTINUE_MESSAGE, get_user_value
-from adjustors import adjust_sign, adjust_type, adjust_x
+from adjustors import adjust_sign, adjust_type, adjustx
 import main
 
 import time
@@ -19,15 +19,15 @@ def run():
     c = adjust_type(c)
     d = adjust_type(d)
 
-    print(f"\n {adjust_x(a)}x {adjust_sign(b)} = {adjust_x(c)}x {adjust_sign(d)}")
+    print(f"\n {adjustx(a)}x {adjust_sign(b)} = {adjustx(c)}x {adjust_sign(d)}")
     time.sleep(PRINTING_TIMELAPS)
-    print(f" {adjust_x(a)}x = {adjust_x(c)}x {adjust_sign(d)} {adjust_sign(-b)}")
+    print(f" {adjustx(a)}x = {adjustx(c)}x {adjust_sign(d)} {adjust_sign(-b)}")
     time.sleep(PRINTING_TIMELAPS)
-    print(f" {adjust_x(a)}x = {adjust_x(c)}x {adjust_sign(d-b)}")
+    print(f" {adjustx(a)}x = {adjustx(c)}x {adjust_sign(d-b)}")
     time.sleep(PRINTING_TIMELAPS)
-    print(f" {adjust_x(a)}x {adjust_sign(adjust_x(-c))}x = {d-b}")
+    print(f" {adjustx(a)}x {adjust_sign(adjustx(-c))}x = {d-b}")
     time.sleep(PRINTING_TIMELAPS)
-    print(f" {adjust_x(a-c)}x = {d-b}")
+    print(f" {adjustx(a-c)}x = {d-b}")
     time.sleep(PRINTING_TIMELAPS)
 
     if(a == c):

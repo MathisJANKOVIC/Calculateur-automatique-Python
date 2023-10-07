@@ -1,5 +1,5 @@
 from utils import PRINTING_TIMELAPS, CONTINUE_MESSAGE, get_user_value
-from adjustors import adjust_sign, adjust_type, adjust_x
+from adjustors import adjust_sign, adjust_type, adjustx
 
 import main
 import time
@@ -15,9 +15,9 @@ def run():
     a = adjust_type(a)
     b = adjust_type(b)
 
-    print(f"\n {adjust_x(a)}x {adjust_sign(b)} = 0")
+    print(f"\n {adjustx(a)}x {adjust_sign(b)} = 0")
     time.sleep(PRINTING_TIMELAPS)
-    print(f" {adjust_x(a)}x = {-b}")
+    print(f" {adjustx(a)}x = {-b}")
     time.sleep(PRINTING_TIMELAPS)
     print(f" x = {-b}/{a}")
     time.sleep(PRINTING_TIMELAPS)
