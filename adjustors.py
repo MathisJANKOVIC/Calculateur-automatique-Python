@@ -7,7 +7,7 @@ def adjust_type(value: str) -> int | float :
 
 def adjust_sign(coef) -> str :
     """ Adjusts the sign of the coefficient or the single-sign for display in the context of a no first therm in an equation."""
-    if(type(coef) == int or type(coef) == float):
+    if(type(coef) is int or type(coef) is float):
         if(coef > 0):
             return f"+ {coef}"
         if(coef == 0):
