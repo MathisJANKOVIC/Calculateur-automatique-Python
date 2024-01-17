@@ -1,4 +1,4 @@
-import console_menu
+from pythonclimenu import menu
 import equation1
 import equation2
 import equation3
@@ -6,7 +6,7 @@ import equation3
 CHOICES = ("ax + b = 0", "ax² + bx + c = 0", "ax + b = cx + d", "Quitter")
 
 def main():
-    choice_equation = console_menu.menu("Quelle équation voulez-vous résoudre ?", CHOICES, "\033[48;5;22m")
+    choice_equation = menu("Quelle équation voulez-vous résoudre ?", CHOICES, (0, 95, 0))
 
     if(choice_equation == CHOICES[0]):
         equation1.run()

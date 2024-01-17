@@ -6,16 +6,19 @@ Equation Solver is a Python program that has the ability to solve equations by d
     2. ax² + bx + c = 0
     3. ax + b = cx + d
 
-## Example
-![equation solving screen](/screen_equation_solving.png)
-
-## Requirements
-- Windows
-- Python 3.10+ (Optionnal)
+## Overview
+![equation solving screen](/equation_solving.png)
 
 ## Installation
-To use the program you can simply download and run `Equation Solver.exe` otherwise if you want to get the project follow those instructions :
+Python 3.10 or later is required to run the project.
+```bash
+# Clone the repository
+git clone https://github.com/MathisJANKOVIC/Equation-Solver.git
 
-1. Download and extract the zip or clone the project
-2. Navigate into a terminal to the project directory
-3. Run the command `python main.py` (requires python path in environement variables)
+# Install the required module
+pip install python-cli-menu
+
+# run the project
+python main.py
+```
+If you're on Windows you can simply download and run `Equation Solver.exe`
