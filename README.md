@@ -19,6 +19,6 @@ git clone https://github.com/MathisJANKOVIC/Equation-Solver.git
 pip install python-cli-menu
 
 # run the project
-python main.py
+python src/main.py
 ```
 If you're on Windows you can simply download and run `Equation Solver.exe`
