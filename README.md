@@ -1,13 +1,13 @@
 # Equation-Solver
 
-Equation Solver is a Python program that has the ability to solve equations by detailling steps calculations line by line and by explaining reasoning. Here are equations list that the program can solve :
+Equation Solver is a program that has the ability to solve equations by detailling steps calculations line by line and by explaining reasoning. Here are equations list that the program can solve :
 
     1. ax + b = 0
     2. ax² + bx + c = 0
     3. ax + b = cx + d
 
 ## Overview
-![equation solving screen](/equation_solving.png)
+![app overview](/equation_solving.png)
 
 ## Installation
 Python 3.10 or later is required to run the project.
